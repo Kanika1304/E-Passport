@@ -1,0 +1,27 @@
+CREATE TABLE [dbo].[ApplicationForm]
+(
+    [Id] INT Foreign key References Registration(userid) NOT NULL, 
+    [fname] VARCHAR(50) NOT NULL, 
+    [lname] VARCHAR(50) NOT NULL, 
+    [dob] VARCHAR(50) NOT NULL, 
+    [placeofbirth] VARCHAR(50) NOT NULL, 
+    [gender] VARCHAR(50) NOT NULL, 
+    [city] VARCHAR(50) NOT NULL, 
+    [district] VARCHAR(50) NOT NULL, 
+    [state] VARCHAR(50) NOT NULL, 
+    [maritalstatus] VARCHAR(50) NOT NULL, 
+    [pan] VARCHAR(50) NOT NULL, 
+    [employeetype] VARCHAR(50) NOT NULL, 
+    [education] VARCHAR(50) NOT NULL, 
+    [fathersname] VARCHAR(50) NOT NULL, 
+    [mothersname] VARCHAR(50) NOT NULL, 
+    [houseno] VARCHAR(50) NOT NULL, 
+    [streetname] VARCHAR(50) NOT NULL, 
+    [pincode] BIGINT NOT NULL, 
+    [mobileno] VARCHAR(50) NOT NULL, 
+    [email] VARCHAR(50) NOT NULL, 
+    [referencename] VARCHAR(50) NOT NULL, 
+    [address] VARCHAR(200) NOT NULL, 
+    [refphone] BIGINT NOT NULL 
+
+)
